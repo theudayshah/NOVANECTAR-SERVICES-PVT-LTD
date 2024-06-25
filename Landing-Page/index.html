@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">STOCKBUZZ</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#">PLANS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="trial">
+                <button>START TRIAL NOW</button>
+            </div>
+        </nav>
+
+        <nav id="mobile-nav">
+            <div class="logo">STOCKBUZZ</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-logo">
+                    <svg onclick="showMenu()" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                        width="40px" fill="#E2DCDE">
+                        <path
+                            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                    </svg>
+                </div>
+                <div id="hamburger-menu-links">
+                    <svg onclick="hideMenu()" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                        width="40px" fill="#E2DCDE">
+                        <path
+                            d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                    </svg>
+                    <li><a href="#main" onclick="hideMenu()">HOME</a></li>
+                    <li><a href="#" onclick="hideMenu()">PLANS</a></li>
+                    <li><a href="#" onclick="hideMenu()">ABOUT US</a></li>
+                    <li><a href="#" onclick="hideMenu()">CONTACT US</a></li>
+                    <div class="trial">
+                        <button>START TRIAL NOW</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="HOME">
+        <div class="container">
+            <div class="text">
+                <div class="main-text">
+                    <p>All-In-One Demat</p>
+                    <p>with multiple benefits</p>
+                    <p><i>Invest without extra cost</i></p>
+                    <div class="benfits">
+                        <div class="zero">₹0</div>
+                        <div class="zero_text">
+                            <p><span>Brokerage On</span>
+                                <br>Equity Delivery Trades
+                            </p>
+                            <p><span>Brokerage for First 30 Days*</span>
+                                <br>On Intraday, F&O, Commodities
+                                <br>& Currencies
+                            </p>
+                            <p><span>Charges</span> for Account Maintenance
+                                <br>for First Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <p class="form-headline">Open Free* Demat Account!</p>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="number" placeholder="Mobile No" required>
+                    <input type="text" placeholder="Enter City" required>
+                    <button type="submit">Open An Account</button>
+                </form>
+                <a href="#"><p class="form-bottomline">Want to open an NRI account?</p></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 STOCKBUZZ. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
